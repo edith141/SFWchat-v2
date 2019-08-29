@@ -88,7 +88,7 @@ main, #messages-card {
 }
 
 #message-form .mdl-textfield {
-  width: calc(100% - 100px);
+  width: 100%;
 }
 
 #image-form {
@@ -99,14 +99,14 @@ main, #messages-card {
 }
 
 #message-form button, #image-form button {
-  width: 100px;
+  /* width: 100px; */
   margin: 15px 0 0 10px;
 }
 .mdl-card {
   min-height: 0;
 }
 .mdl-card {
-  background: linear-gradient(white, #f9f9f9);
+  background: white;
   justify-content: space-between;
 }
 #user-container {
@@ -123,17 +123,12 @@ main, #messages-card {
 
 .message-container .name {
   display: inline-block;
-  width: 100%;
+  width: auto;
   padding-left: 40px;
   color: #bbb;
   font-style: italic;
   font-size: 12px;
-  box-sizing: border-box;
-}
-
-.message img {
-  max-width: 300px;
-  max-height: 200px;
+  /* box-sizing: border-box; */
 }
 
 #user-container #user-name {
@@ -195,4 +190,8 @@ main, #messages-card {
 .mdl-button .material-icons {
   top: -1px;
   margin-right: 5px;
+}
+.img-responsive {
+  max-width: 100%;
+  height: auto;
 }

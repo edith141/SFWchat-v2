@@ -41,7 +41,7 @@
   <header class="mdl-layout__header mdl-color--deep-purple-400 mdl-color-text--white">
     <div class="mdl-cell mdl-grid mdl-cell--12-col-tablet mdl-cell--12-col">
       <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col">
-        <h3><i class="material-icons">whatshot</i> SFWs Chat</h3>
+        <h3><i class="material-icons">whatshot</i> SFW Chat</h3>
       </div>
 <!-- main user -->
       <div id="user-container">
@@ -51,7 +51,7 @@
           Sign-out
         </button>
         <button hidden id="sign-in" class="mdl-button mdl-js-button mdl-color-text--white mdl-js-ripple-effect ">
-          <i class="material-icons">account_circle</i>Sign-in with Google
+          <i class="material-icons">account_circle</i>Log-in
         </button>
       </div>
     </div>
@@ -69,18 +69,17 @@
           <form id="message-form" action="#">
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
               <input class="mdl-textfield__input" type="text" id="message" autocomplete="off">
-              <label class="mdl-textfield__label" for="message">Message...</label>
+              <label class="mdl-textfield__label" for="message">Type a mesage</label>
             </div>
             <!-- send btn -->
-            <button id="submit" disabled type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-              <i class="material-icons">add_shopping_cart</i>
-              Senddddd
+            <button id="submit" disabled type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color--grey-70 ">
+              <i class="material-icons">send</i>
             </button>
           </form>
           <!-- send img -->
           <form id="image-form" action="#">
             <input id="mediaCapture" type="file" accept="image/*" capture="camera">
-            <button id="submitImage" title="Add an image" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--amber-400 mdl-color-text--white">
+            <button id="submitImage" title="Add an image" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--red-300">
               <i class="material-icons">image</i>
             </button>
           </form>
@@ -96,7 +95,7 @@
   </main>
 </div>
 
-<!-- FireBase libs-->
+<!-- FireBase -->
 <!-- Automatic config through firebase hosting -->
 <script src="/__/firebase/6.4.0/firebase-app.js"></script>
 <script src="/__/firebase/6.4.0/firebase-auth.js"></script>
